@@ -220,7 +220,8 @@ export const IonRouterOutlet = defineComponent({
 
       const currentRoute = ionRouter.getCurrentRouteInfo();
       const hasTabsPrefix = viewStacks.hasTabsPrefix(currentRoute.pathname)
-      if (hasTabsPrefix && !attrs.tabs) { return; }
+      const isLastPathTabs = viewStacks.hasTabsPrefix(currentRoute.lastPathname);
+      if (hasTabsPrefix && isLastPathTabs && !attrs.tabs) { return; }
 
       let enteringViewItem = viewStacks.findViewItemByRouteInfo(currentRoute, id);
 
