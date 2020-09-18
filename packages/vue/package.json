@@ -52,7 +52,7 @@
     "workbox-build": "4.3.1"
   },
   "dependencies": {
-    "@ionic/core": "0.5.0-dev.202009181807.fbe1158",
+    "@ionic/core": "0.4.0",
     "ionicons": "^5.1.2"
   }
 }
